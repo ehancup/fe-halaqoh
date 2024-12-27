@@ -12,8 +12,20 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'poppins' : ['Poppins', 'sans-serif'],
+        'montserrat' : ['Montserrat', 'sans-serif'],
+        'roboto' : ['"Roboto"', 'sans-serif'],
+        'quicksand' : ['"Quicksand"', 'sans-serif'],
+        'handrawn' : ['"Delicious Handrawn"', 'cursive'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("daisyui"),
+  ],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
 };
 export default config;
